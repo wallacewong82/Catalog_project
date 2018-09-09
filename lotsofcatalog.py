@@ -58,6 +58,7 @@ subcatalog1 = Subcatalog(name="Soccer", description="Association football,"\
                          " moving the ball beyond the goal line into the "\
                          "opposing goal.",
                          catalog=catalog1, user_name=User1.name,
+                         user_id=User1.id,
                          user_email=User1.email)
 session.add(subcatalog1)
 session.commit()
@@ -65,6 +66,7 @@ session.commit()
 subcatalogItem1 = Item(name="Boots", description="A pair of boots",
                        subcatalog=subcatalog1, parent_catalog=subcatalog1.name,
                        user_name=User1.name, user_email=User1.email,
+                       user_id=User1.id,
                        datetime_added=datetime.datetime(2018, 3, 7, 0, 6))
 session.add(subcatalogItem1)
 session.commit()
@@ -72,6 +74,7 @@ session.commit()
 subcatalogItem2 = Item(name="Jersey", description="A dryfit shirt",
                        subcatalog=subcatalog1, parent_catalog=subcatalog1.name,
                        user_name=User1.name, user_email=User1.email,
+                       user_id=User1.id,
                        datetime_added=datetime.datetime(2018, 3, 7, 0, 8))
 session.add(subcatalogItem2)
 session.commit()
@@ -79,6 +82,7 @@ session.commit()
 subcatalogItem3 = Item(name="Shorts", description="A pair of shorts",
                        subcatalog=subcatalog1, parent_catalog=subcatalog1.name,
                        user_name=User1.name, user_email=User1.email,
+                       user_id=User1.id,
                        datetime_added=datetime.datetime(2018, 3, 7, 0, 3))
 session.add(subcatalogItem3)
 session.commit()
@@ -86,6 +90,7 @@ session.commit()
 subcatalogItem4 = Item(name="Socks", description="A pair of knee socks",
                        subcatalog=subcatalog1, parent_catalog=subcatalog1.name,
                        user_name=User1.name, user_email=User1.email,
+                       user_id=User1.id,
                        datetime_added=datetime.datetime(2018, 3, 7, 0, 1))
 session.add(subcatalogItem4)
 session.commit()
@@ -99,6 +104,7 @@ subcatalog2 = Subcatalog(name="Basketball", description="Basketball is a team"\
                          " through the defender's hoop while preventing the"\
                          " opposing team from shooting through their own hoop.",
                          catalog=catalog1, user_name=User2.name,
+                         user_id=User2.id,
                          user_email=User2.email)
 session.add(subcatalog2)
 session.commit()
@@ -106,6 +112,7 @@ session.commit()
 subcatalogItem1 = Item(name="Sneakers", description="A pair of sneakers",
                        subcatalog=subcatalog2, parent_catalog=subcatalog2.name,
                        user_email=User2.email, user_name=User2.name,
+                       user_id=User2.id,
                        datetime_added=datetime.datetime(2018, 3, 7, 0, 1))
 session.add(subcatalogItem1)
 session.commit()
@@ -113,6 +120,7 @@ session.commit()
 subcatalogItem2 = Item(name="Jersey", description="A dryfit singlet",
                        subcatalog=subcatalog2, parent_catalog=subcatalog2.name,
                        user_email=User2.email, user_name=User2.name,
+                       user_id=User2.id,
                        datetime_added=datetime.datetime(2018, 3, 7, 0, 6))
 session.add(subcatalogItem2)
 session.commit()
@@ -120,6 +128,7 @@ session.commit()
 subcatalogItem3 = Item(name="Bermudas", description="A pair of bermuda shorts",
                        subcatalog=subcatalog2, parent_catalog=subcatalog2.name,
                        user_email=User2.email, user_name=User2.name,
+                       user_id=User2.id,
                        datetime_added=datetime.datetime(2018, 3, 7, 0, 3))
 session.add(subcatalogItem3)
 session.commit()
@@ -127,6 +136,7 @@ session.commit()
 subcatalogItem4 = Item(name="Socks", description="A pair of socks",
                        subcatalog=subcatalog2, parent_catalog=subcatalog2.name,
                        user_email=User2.email, user_name=User2.name,
+                       user_id=User2.id,
                        datetime_added=datetime.datetime(2018, 3, 7, 0, 7))
 session.add(subcatalogItem4)
 session.commit()
@@ -148,6 +158,7 @@ subcatalog3 = Subcatalog(name="Rugby", description="Rugby league football is a"\
                          "at goal may also be awarded for penalties, and "\
                          "field goals can be attempted at any time.",
                          catalog=catalog1, user_name=User1.name,
+                         user_id=User1.id,
                          user_email=User1.email)
 session.add(subcatalog3)
 session.commit()
@@ -155,6 +166,7 @@ session.commit()
 subcatalogItem1 = Item(name="Boots", description="A pair of boots",
                        subcatalog=subcatalog3, parent_catalog=subcatalog3.name,
                        user_name=User1.name, user_email=User1.email,
+                       user_id=User1.id,
                        datetime_added=datetime.datetime(2018, 3, 7, 0, 2))
 session.add(subcatalogItem1)
 session.commit()
@@ -162,6 +174,7 @@ session.commit()
 subcatalogItem2 = Item(name="Jersey", description="A dryfit singlet",
                        subcatalog=subcatalog3, parent_catalog=subcatalog3.name,
                        user_name=User1.name, user_email=User1.email,
+                       user_id=User1.id,
                        datetime_added=datetime.datetime(2018, 3, 7, 0, 4))
 session.add(subcatalogItem2)
 session.commit()
@@ -169,6 +182,7 @@ session.commit()
 subcatalogItem3 = Item(name="Bermudas", description="A pair of bermuda shorts",
                        subcatalog=subcatalog3, parent_catalog=subcatalog3.name,
                        user_name=User1.name, user_email=User1.email,
+                       user_id=User1.id,
                        datetime_added=datetime.datetime(2018, 3, 7, 0, 8))
 session.add(subcatalogItem3)
 session.commit()
@@ -176,6 +190,7 @@ session.commit()
 subcatalogItem4 = Item(name="Socks", description="A pair of socks",
                        subcatalog=subcatalog3, parent_catalog=subcatalog3.name,
                        user_name=User1.name, user_email=User1.email,
+                       user_id=User1.id,
                        datetime_added=datetime.datetime(2018, 3, 7, 0, 5))
 session.add(subcatalogItem4)
 session.commit()
