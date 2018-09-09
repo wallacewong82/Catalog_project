@@ -2,6 +2,8 @@
 
 This README provides the instructions to the Catalog application project for Udacity Full Stack Web Developer Nanodegree course.
 
+
+
 ## How The App Works
 The application operates as a catalog tool for users to store and share data. Practical uses for this application include knowledge sharing platforms (e.g. Quora, Wikipedia, or Reddit) as well as messageboards and forums for discussion topics. The example used in the course was for restaurant menu items; whilst the example used in this project is for sports categories and gear.
 
@@ -9,8 +11,11 @@ This application allows public users to freely reference and read the informatio
 
 User will also be able to review the data using JSON links provided in the Usage section.
 
+
+
 ## Data structure
 There are 4 sets of data in this application.
+
 
 **Dataset #1: Catalog:**
 For this project we only allow 1 instance of Catalog, which houses a set of Categories which in turn house a set of Items within. Think of Catalog like a cluster of restaurants within a shopping mall.
@@ -39,11 +44,12 @@ The users whom use the above 3 datasets. Think of these as owners of the restaur
 ### Setup:
 1. Download the files from GitHub repository.
 
+
 2. Set up your Google ID credentials for OAuth2.0. You will need the following setup:
 
     a. Create a new Web Application on Console.developers.google.com. 
 
-    b. Name the app, and set Authorized Javascript origins to http://localhost:5000.
+    b. Name the app, and set Authorized Javascript origins to `http://localhost:5000`.
     
     c. Also, add `http://localhost:5000/oauth2callback` to Authorized redirect URIs.
     
@@ -55,6 +61,7 @@ The users whom use the above 3 datasets. Think of these as owners of the restaur
     
     h. Copy and paste the Google ClientID to Line 38 of that file; and then save it.
 
+
 3. Next, set up your VM environment on your Git Bash platform.
 
     a. Go to the folder housing the files by typing `cd #name-of-folder`.
@@ -65,15 +72,20 @@ The users whom use the above 3 datasets. Think of these as owners of the restaur
     
     d. Locate the folder housing the files in the VM environment.
 
+
 4. Next, set up the database by running `python lotsofcatalog.py`. This creates the catalog.db database with some initial data. 
 
 - Note that if the user wants to be already included in the initial database setup, they can change the dummy user accounts in the lotsofcatalog.py file. The lines to change are 32 and 38 respectively.
 
 - Note that if the user wants to reset the database at any time, they will need to delete the catalog.db file first, before running the `python lotsofcatalog.py` again.
 
+
 5. Then, run the file by hitting `python main.py`. If all steps are done correctly, you will see the server running.
 
+
 6. Go to your favourite browser, and go to `http://localhost:5000/catalog/` to start the app.
+
+
 
 ### Usage:
 1. Usage as a public user.
@@ -90,6 +102,7 @@ The users whom use the above 3 datasets. Think of these as owners of the restaur
 - For all Categories:  `http://localhost:5000/catalog/JSON`;
 
 - For all Items in selected Category: `http://localhost:5000/catalog/<string:name_of_category>/JSON`
+
 
 2. Usage as a signed-in user.
 
@@ -115,8 +128,11 @@ The users whom use the above 3 datasets. Think of these as owners of the restaur
 
     h. Hitting the Logout button at any time will lead the signed-in user to become a public user; then taken back to the `/catalog` page (public version). 
 
+
 3. Security.
 Users are prevented from directly keying in `/edit`, `/delete`, `/addItem`, and `/addSubcatalog` to the URLs; as this is insecurely manipulating the data. This applies whether they are public (i.e. non-signed in users), or signed-in users who are not owning those specified Categories/Items. Instead, they will be taken back to the "/login" page.
+
+
 
 ### Notes, credits and licensing:
 It is to be mentioned that some lines in the main.py file do not follow PEP8 compliance; simply because it makes little sense in those situations to wrap the text further. Users should be able to relate to these constraints when examining the code in detail.
