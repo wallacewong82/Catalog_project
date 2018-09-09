@@ -41,7 +41,7 @@ The users whom use the above 3 datasets. Think of these as owners of the restaur
 *4 variables (not exposed): 'user_name', 'user_email', 'user_picture', 'user_id'.*
 
 
-### Setup:
+## Setup:
 1. Download the files from GitHub repository.
 
 
@@ -87,7 +87,7 @@ The users whom use the above 3 datasets. Think of these as owners of the restaur
 
 
 
-### Usage:
+## Usage:
 1. Usage as a public user.
 
     a. Public users visiting `http://localhost:5000/catalog/` will see all the public data available for viewing. 
@@ -134,7 +134,7 @@ Users are prevented from directly keying in `/edit`, `/delete`, `/addItem`, and 
 
 
 
-### Notes, credits and licensing:
+## Notes, credits and licensing:
 It is to be mentioned that some lines in the main.py file do not follow PEP8 compliance; simply because it makes little sense in those situations to wrap the text further. Users should be able to relate to these constraints when examining the code in detail.
 
 Credits go to Lorenzo Brown, the instructor who taught me the "Databases with SQL and Python" Nanodegree course; of which much of the initial code base was also referenced from.
